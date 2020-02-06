@@ -44,10 +44,10 @@
         // 给按钮添加点击事件：
         // （1）收集用户信息，简单判断.
         //  (2) 请求ajax接口，根据接口的反馈做后续的动作
-        $('#btnLogin').click(function(){
-            var name =  $('#username').val().trim()
-            var password = $('#password').val().trim()
-            if(name.length === 0 || password.length === 0){
+        $('#btnLogin').click(function(){              //获取按钮并添加点击事件
+            var name =  $('#username').val().trim()   //获取文本框用户名,并删除两端空白字符
+            var password = $('#password').val().trim() //获取密码并删除两端空白字符
+            if(name.length === 0 || password.length === 0){  //判断用户名和密码是否为空
                 alert('不能为空')
                 return
             }
@@ -62,7 +62,7 @@
                     // 跳到主页
                     window.location.href = "./index.html"
                 } else {
-                    // 失败，直接打出错别信息
+                    // 失败，直接打出错误信息
                     alert(res.msg)
                 }
             })
