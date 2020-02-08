@@ -5,7 +5,7 @@
 // 这个对象上有then方法，then()的功能是获取返回的数据
 // $.post( ).then(function(res){  res 就是接口返回的数据 })
 
-var user = {
+let user = {
     // 用户登陆
     login: function(name,password) {
         // 函数的返回值就是一个promise对象。
