@@ -21,7 +21,7 @@ let user = {
     },
     // 获取信息
     getInfo:function(){
-        var t = $.get(APILIST.user_getInfo)
+        let t = $.get(APILIST.user_getInfo)
         console.log(t)
         return  t
     }
