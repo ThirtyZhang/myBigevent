@@ -5,10 +5,10 @@
 // 就是运行小黑窗服务器的地址.如果当前的服务器就是在自已电脑上，就可以直接写成localhost
 // var BASEURL = 'http://localhost:8000'
 // var BASEURL = 'http://192.168.0.108:8000'
-var BASEURL = 'http://39.99.130.177:8000'
+const BASEURL = 'http://39.99.130.177:8000'
 
 // 用来保存所有的接口信息
-var APILIST = {
+const APILIST = {
     user_login: BASEURL + '/admin/login',
     user_logout: BASEURL + '/admin/logout',
     user_getInfo: BASEURL + '/admin/getuser',
